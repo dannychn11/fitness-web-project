@@ -1,0 +1,123 @@
+body {
+  background-color: powderblue;
+  text-align: center;
+}
+
+h1 {
+  color: black;
+  font-family: Helvetica, serif;
+  font-size: 70px;
+}
+
+p {
+  font-size: 15pt;
+  color: black;
+}
+
+button#information {
+  font-size: 30px;
+}
+
+button#workoutTools {
+  font-size: 30px;
+}
+
+button#log {
+  font-size: 30px;
+}
+
+input#date {
+  font-size: 15px;
+}
+
+.input {
+  width: 140px;
+  height: 25px;
+}
+
+.Numinput {
+  width: 40px;
+  height: 25px;
+}
+
+.delete {
+  position: absolute;
+  padding: 5px;
+  right: 20px;
+  border: 1px solid black;
+}
+
+.log {
+  background: rgb(235, 235, 235);
+  padding: 5px;
+  margin: auto;
+  border: 1px solid black;
+}
+
+.userInfo {
+  background: rgb(235, 235, 235);
+  padding: 25px;
+  margin: auto;
+  width: 400px;
+  border: 1px solid black;
+}
+
+.edit {
+  position: absolute;
+  padding: 5px;
+  right: 100px;
+  border: 1px solid black;
+}
+
+.collapsible {
+  background-color: #eee;
+  color: black;
+  cursor: pointer;
+  padding: 18px;
+  width: 30%;
+  border: none;
+  text-align: center;
+  outline: none;
+  font-size: 15px;
+}
+
+.userForm {
+  display: none;
+  overflow: hidden;
+
+}
+
+.collapsible:after {
+  content: '\02795';
+  /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: white;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2796";
+  /* Unicode character for "minus" sign (-) */
+}
+
+.display {
+  background-color: rgb(235, 235, 235);
+  border-color: black;
+  padding:15px;
+  font-size: 20px;
+}
+
+.display:hover {
+  background-color: rgb(206, 205, 205);
+}
+
+.inputForm {
+  display: none;
+  width: 50%;
+}
+
+.cardio {
+  width: 60px;
+}
+

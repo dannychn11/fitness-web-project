@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Create Log</title>
+  <link rel="icon" href="images/dumbbell.png">
+  <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body>
+  <div>
+    <h1>Create New Log</h1>
+    <p>You can now create your own log. First, you will need to set the date
+      of the workout. All the exercises that are added will be of that date.
+      If you wish to add another workout, simply change the date.
+    </p><br>
+    <div class="log" style="width:30%">
+      <input id="date" type="date">
+      <button onclick="setDate()">Set Date</button>
+    </div>
+    <p>Choose an exercise to add</p>
+    <button class="display">Cardio</button>
+    <button class="display">Weights</button>
+    <br>
+  </div>
+  <button class="display" style="display:none">Reset</button><br><br>
+
+  <form class="inputForm log">
+    <input class="input" id="cardioExercise" type="text" placeholder="Excercise" autofocus="on" required />
+    <input class="input cardio" id="time" placeholder="Time">
+    <input class="input cardio" id="distance" placeholder="distance">
+    <button type="submit">Add</button>
+  </form>
+
+  <form class="inputForm log">
+    <input class="input" id="input1" type="text" placeholder="Excercise" autofocus="on" required />
+    <input class="Numinput" id="input2" type="number" min="1" max="99" placeholder="Sets" required />
+    <input class="Numinput" id="input3" type="number" min="1" max="99" placeholder="Reps" required />
+    <input class="Numinput" id="input4" style="width: 50px" type="number" placeholder="Weight">
+
+    <select id="measurement">
+      <option value="lbs">lbs</option>
+      <option value="kg">kg</option>
+    </select>
+    <button type="submit">Add</button>
+  </form>
+  <br>
+  <div class="log" style="width:70%">
+    <h2>Log</h2>
+
+    <select id="sort">
+      <option value="date">Date</option>
+      <option value="exercise">Name</option>
+    </select>
+    <button onclick="sortWorkout(newWorkout)">Sort</button>
+
+
+    <div id="workout">
+
+    </div><br>
+
+    <button onclick="clearAll()" id="clearButton">Clear All</button>
+    <button><a href="./save.html">Save</a></button>
+  </div>
+
+  <br><br>
+  <a href="./home.html"><img src="images/home.png" height="50" width="50"></a>
+
+
+
+  </div>
+
+  <script src="scripts/common.js" defer></script>
+  <script src="scripts/log.js" defer></script>
+</body>
+
+</html>
